@@ -1,0 +1,54 @@
+name: Blocklist
+
+# Runs at 00:00 UTC on Sun
+on: push
+#   schedule:
+#     - cron:  '0 0 * * 0'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    container: alpine/git:latest
+    env:
+      TEMPLIST: "/tmp/blocklist"
+      BLOCKLIST: "dnsmasq-blocklist.txt"
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Container setup
+        run: apk add --no-cache curl
+
+      - name: Download yoyo
+        run: curl -sSL "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=host&amp;showintro=0&amp;mimetype=plaintext" > $TEMPLIST
+
+      - name: Download dshield
+        run: |
+          curl -sSL "https://www.dshield.org/feeds/suspiciousdomains_High.txt" | sed -r '/^$|^#|^ */d' >> $TEMPLIST
+          curl -sSL "https://www.dshield.org/feeds/suspiciousdomains_Medium.txt" | sed -r '/^$|^#|^ */d' >> $TEMPLIST
+          curl -sSL "https://www.dshield.org/feeds/suspiciousdomains_Low.txt" | sed -r '/^$|^#|^ */d' >> $TEMPLIST
+
+      - name: Download adblock
+        run: curl -sSL "http://adblock.mahakala.is" | awk 'NF==2 {print $2}' >> $TEMPLIST
+
+      - name: Download malware
+        run: curl -sSL "http://www.malwaredomainlist.com/hostslist/hosts.txt" | awk 'NF==2 {print $2}' >> $TEMPLIST
+
+      - name: Filter blocklist
+        run: |
+          sed -r '/^$|^#|^ *|^\.|^\-|localhost|test[ing]*/d' $TEMPLIST | sort | uniq > $BLOCKLIST
+          sed -i 's/^\(.*\)$/address=\/\1\/0\.0\.0\.0/' $BLOCKLIST
+          echo "::set-output name=git::$(git diff --quiet --exit-code)"
+        id: do_commit
+
+      - name: Count blocklist
+        run: |
+          wc -l $TEMPLIST
+          wc -l $BLOCKLIST
+
+      - name: Commit blocklist
+        if: ${{ steps.do_commit.outputs.git }}
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git commit -a -m "Update blocklist" --author="${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
+          git push origin
