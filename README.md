@@ -1,5 +1,5 @@
 # dnsmasq-blocklist
-![Blocklist](https://github.com/koola/blocklist-dnsmasq/workflows/Blocklist/badge.svg?branch=master)
+![Blocklist](https://github.com/koola/dnsmasq-blocklist/workflows/Blocklist/badge.svg)
 
 
 The dnsmasq-blocklist is aggregated from:
