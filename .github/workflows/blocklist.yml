@@ -40,8 +40,7 @@ jobs:
         run: |
           sed -r '/^$|^#|^ *|^\.|^\-|localhost|test[ing]*/d' $TEMPLIST | sort | uniq > $BLOCKLIST
           sed -i 's/^\(.*\)$/address=\/\1\/0\.0\.0\.0/' $BLOCKLIST
-          echo "::set-output name=git::$(git diff --quiet --exit-code)"
-        id: do_commit
+          echo "::set-env name=git_commit::$(git diff --quiet --exit-code)$?"
 
       - name: Count blocklist
         run: |
@@ -49,7 +48,7 @@ jobs:
           wc -l $BLOCKLIST
 
       - name: Commit blocklist
-#         if: ${{ steps.do_commit.outputs.git }}
+        if: env.git_commit != '0'
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
