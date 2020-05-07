@@ -27,8 +27,8 @@ jobs:
           curl -sSL "https://www.dshield.org/feeds/suspiciousdomains_Medium.txt" | sed -r '/^$|^#|^ */d' >> $TEMPLIST
           curl -sSL "https://www.dshield.org/feeds/suspiciousdomains_Low.txt" | sed -r '/^$|^#|^ */d' >> $TEMPLIST
 
-      - name: Download adblock
-        run: curl -sSL "http://adblock.mahakala.is" | awk 'NF==2 {print $2}' >> $TEMPLIST
+#       - name: Download adblock
+#         run: curl -sSL "http://adblock.mahakala.is" | awk 'NF==2 {print $2}' >> $TEMPLIST
 
       - name: Download malware
         run: curl -sSL "http://www.malwaredomainlist.com/hostslist/hosts.txt" | awk 'NF==2 {print $2}' >> $TEMPLIST
