@@ -49,7 +49,7 @@ jobs:
           wc -l $BLOCKLIST
 
       - name: Commit blocklist
-        if: ${{ steps.do_commit.outputs.git }}
+#         if: ${{ steps.do_commit.outputs.git }}
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
