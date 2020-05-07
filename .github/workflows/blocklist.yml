@@ -33,6 +33,9 @@ jobs:
       - name: Download malware
         run: curl -sSL "http://www.malwaredomainlist.com/hostslist/hosts.txt" | awk 'NF==2 {print $2}' >> $TEMPLIST
 
+      - name: Add adblock custom
+        run: cat adblock_custom.txt >> $TEMPLIST
+
       - name: Filter blocklist
         run: |
           sed -r '/^$|^#|^ *|^\.|^\-|localhost|test[ing]*/d' $TEMPLIST | sort | uniq > $BLOCKLIST
