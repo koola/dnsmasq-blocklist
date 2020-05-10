@@ -1,9 +1,9 @@
 name: Blocklist
 
 # Runs at 00:00 UTC on Sun
-on:
-  schedule:
-    - cron:  '0 0 * * 0'
+on: push
+#  schedule:
+#    - cron:  '0 0 * * 0'
 
 jobs:
   update:
@@ -48,11 +48,11 @@ jobs:
         run: dnsmasq --test --conf-file=$blocklist
 
       - name: Generate checksum
-        if: env.blocklist_diff != '0'
+#        if: env.blocklist_diff != '0'
         run: sha1sum $blocklist | sed -n 's/^\([^ ]\+\).*/\1/p' > "$blocklist.checksum"
 
       - name: Commit blocklist
-        if: env.blocklist_diff != '0'
+#        if: env.blocklist_diff != '0'
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
