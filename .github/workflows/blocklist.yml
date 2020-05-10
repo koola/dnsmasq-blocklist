@@ -1,17 +1,17 @@
 name: Blocklist
 
 # Runs at 00:00 UTC on Sun
-on: push
-#  schedule:
-#    - cron:  '0 0 * * 0'
+on:
+  schedule:
+    - cron:  '0 0 * * 0'
 
 jobs:
   update:
     runs-on: ubuntu-latest
     container: alpine/git:latest
     env:
-      TEMPLIST: "/tmp/blocklist"
-      BLOCKLIST: "dnsmasq-blocklist.txt"
+      templist: "/tmp/blocklist"
+      blocklist: "dnsmasq-blocklist.txt"
     steps:
       - uses: actions/checkout@v2
 
@@ -19,37 +19,37 @@ jobs:
         run: apk add --no-cache dnsmasq curl
 
       - name: Download yoyo
-        run: curl -sSL "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=host&amp;showintro=0&amp;mimetype=plaintext" > $TEMPLIST
+        run: curl -sSL "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=host&amp;showintro=0&amp;mimetype=plaintext" > $templist
 
       - name: Download dshield
         run: |
-          curl -sSL "https://www.dshield.org/feeds/suspiciousdomains_High.txt" | sed -r '/^$|^#|^ */d' >> $TEMPLIST
-          curl -sSL "https://www.dshield.org/feeds/suspiciousdomains_Medium.txt" | sed -r '/^$|^#|^ */d' >> $TEMPLIST
-          curl -sSL "https://www.dshield.org/feeds/suspiciousdomains_Low.txt" | sed -r '/^$|^#|^ */d' >> $TEMPLIST
+          curl -sSL "https://www.dshield.org/feeds/suspiciousdomains_High.txt" | sed -r '/^$|^#|^ */d' >> $templist
+          curl -sSL "https://www.dshield.org/feeds/suspiciousdomains_Medium.txt" | sed -r '/^$|^#|^ */d' >> $templist
+          curl -sSL "https://www.dshield.org/feeds/suspiciousdomains_Low.txt" | sed -r '/^$|^#|^ */d' >> $templist
 
       - name: Download malware
-        run: curl -sSL "http://www.malwaredomainlist.com/hostslist/hosts.txt" | awk 'NF==2 {print $2}' >> $TEMPLIST
+        run: curl -sSL "http://www.malwaredomainlist.com/hostslist/hosts.txt" | awk 'NF==2 {print $2}' >> $templist
 
       - name: Add adblock custom
-        run: cat blocklist_custom.txt >> $TEMPLIST
+        run: cat blocklist_custom.txt >> $templist
 
       - name: Filter blocklist
         run: |
-          sed -r '/^$|^#|^ *|^\.|^\-|localhost|test[ing]*/d' $TEMPLIST | sort | uniq > $BLOCKLIST
-          sed -i 's/^\(.*\)$/address=\/\1\/0\.0\.0\.0/' $BLOCKLIST
+          sed -r '/^$|^#|^ *|^\.|^\-|localhost|test[ing]*/d' $templist | sort | uniq > $blocklist
+          sed -i 's/^\(.*\)$/address=\/\1\/0\.0\.0\.0/' $blocklist
           echo "::set-env name=blocklist_diff::$(git diff --quiet --exit-code)$?"
 
       - name: Count blocklist
         run: |
-          wc -l $TEMPLIST
-          wc -l $BLOCKLIST
+          wc -l $templist
+          wc -l $blocklist
 
       - name: Test blocklist
-        run: dnsmasq --test --conf-file=$BLOCKLIST
+        run: dnsmasq --test --conf-file=$blocklist
 
       - name: Generate checksum
         if: env.blocklist_diff != '0'
-        run: sha1sum $BLOCKLIST | sed -n 's/^\([^ ]\+\).*/\1/p' > "${BLOCKLIST}.checksum"
+        run: sha1sum $blocklist | sed -n 's/^\([^ ]\+\).*/\1/p' > "$blocklist.checksum"
 
       - name: Commit blocklist
         if: env.blocklist_diff != '0'
