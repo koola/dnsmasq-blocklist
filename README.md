@@ -3,8 +3,7 @@
 
 
 The dnsmasq-blocklist is aggregated from:
-- [Ad blocklist from Yoyo Internet Services](https://pgl.yoyo.org/adservers/serverlist.php?hostformat=host&showintro=0&mimetype=plaintext)
-- [Ad blocklist from Mahakala](http://adblock.mahakala.is)
+- [Ad servers from Yoyo Internet Services](https://pgl.yoyo.org/adservers/serverlist.php?hostformat=host&showintro=0&mimetype=plaintext)
 - [High risk domains from DShield](https://www.dshield.org/feeds/suspiciousdomains_High.txt)
 - [Medium risk domains from DShield](https://www.dshield.org/feeds/suspiciousdomains_Medium.txt)
 - [Low risk domains from DShield](https://www.dshield.org/feeds/suspiciousdomains_Low.txt)

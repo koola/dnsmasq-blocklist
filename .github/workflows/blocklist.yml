@@ -1,9 +1,9 @@
 name: Blocklist
 
 # Runs at 00:00 UTC on Sun
-on:
-   schedule:
-     - cron:  '0 0 * * 0'
+on: push
+#  schedule:
+#    - cron:  '0 0 * * 0'
 
 jobs:
   update:
@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Container setup
-        run: apk add --no-cache curl
+        run: apk add --no-cache dnsmasq curl
 
       - name: Download yoyo
         run: curl -sSL "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=host&amp;showintro=0&amp;mimetype=plaintext" > $TEMPLIST
@@ -27,28 +27,32 @@ jobs:
           curl -sSL "https://www.dshield.org/feeds/suspiciousdomains_Medium.txt" | sed -r '/^$|^#|^ */d' >> $TEMPLIST
           curl -sSL "https://www.dshield.org/feeds/suspiciousdomains_Low.txt" | sed -r '/^$|^#|^ */d' >> $TEMPLIST
 
-#       - name: Download adblock
-#         run: curl -sSL "http://adblock.mahakala.is" | awk 'NF==2 {print $2}' >> $TEMPLIST
-
       - name: Download malware
         run: curl -sSL "http://www.malwaredomainlist.com/hostslist/hosts.txt" | awk 'NF==2 {print $2}' >> $TEMPLIST
 
       - name: Add adblock custom
-        run: cat adblock_custom.txt >> $TEMPLIST
+        run: cat blocklist_custom.txt >> $TEMPLIST
 
       - name: Filter blocklist
         run: |
           sed -r '/^$|^#|^ *|^\.|^\-|localhost|test[ing]*/d' $TEMPLIST | sort | uniq > $BLOCKLIST
           sed -i 's/^\(.*\)$/address=\/\1\/0\.0\.0\.0/' $BLOCKLIST
-          echo "::set-env name=git_commit::$(git diff --quiet --exit-code)$?"
+          echo "::set-env name=blocklist_diff::$(git diff --quiet --exit-code)$?"
 
       - name: Count blocklist
         run: |
           wc -l $TEMPLIST
           wc -l $BLOCKLIST
 
+      - name: Test blocklist
+        run: dnsmasq --test --conf-file=$BLOCKLIST
+
+      - name: Generate checksum
+        if: env.blocklist_diff != '0'
+        run: sha1sum $BLOCKLIST | sed -n 's/^\([^ ]\+\).*/\1/p' > "${BLOCKLIST}.checksum"
+
       - name: Commit blocklist
-        if: env.git_commit != '0'
+        if: env.blocklist_diff != '0'
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
