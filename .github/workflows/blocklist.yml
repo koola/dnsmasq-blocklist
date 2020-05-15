@@ -47,6 +47,9 @@ jobs:
       - name: Test blocklist
         run: dnsmasq --test --conf-file=$blocklist
 
+      - name: Diff
+        run: git diff --name-only
+
       - name: Generate checksum
         if: env.blocklist_diff != '0'
         run: sha1sum $blocklist | sed -n 's/^\([^ ]\+\).*/\1/p' > "$blocklist.checksum"
