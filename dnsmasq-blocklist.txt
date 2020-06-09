@@ -1336,6 +1336,7 @@ address=/calculatorcamera.com/0.0.0.0
 address=/callingcardsinstantly.com/0.0.0.0
 address=/callousbrake.com/0.0.0.0
 address=/callrail.com/0.0.0.0
+address=/calmcactus.com/0.0.0.0
 address=/campaign.bharatmatrimony.com/0.0.0.0
 address=/campamento.queenscamp.com/0.0.0.0
 address=/caniamedia.com/0.0.0.0
