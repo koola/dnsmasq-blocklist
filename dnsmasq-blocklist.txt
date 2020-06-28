@@ -231,6 +231,7 @@ address=/adbunker.com/0.0.0.0
 address=/adbutler.com/0.0.0.0
 address=/adbuyer.com/0.0.0.0
 address=/adbuyer3.lycos.com/0.0.0.0
+address=/adcampo.com/0.0.0.0
 address=/adcannyads.com/0.0.0.0
 address=/adcash.com/0.0.0.0
 address=/adcast.deviantart.com/0.0.0.0
