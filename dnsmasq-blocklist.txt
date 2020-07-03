@@ -929,6 +929,7 @@ address=/adultadvertising.com/0.0.0.0
 address=/adv-adserver.com/0.0.0.0
 address=/adv-banner.libero.it/0.0.0.0
 address=/adv.cooperhosting.net/0.0.0.0
+address=/adv.donejty.pl/0.0.0.0
 address=/adv.freeonline.it/0.0.0.0
 address=/adv.hwupgrade.it/0.0.0.0
 address=/adv.livedoor.com/0.0.0.0
