@@ -3068,6 +3068,7 @@ address=/plantaardigebrandstof.nl/0.0.0.0
 address=/play4traffic.com/0.0.0.0
 address=/playhaven.com/0.0.0.0
 address=/playmobileads.com/0.0.0.0
+address=/pleasantpump.com/0.0.0.0
 address=/plengeh.wen.ru/0.0.0.0
 address=/plista.com/0.0.0.0
 address=/plugrush.com/0.0.0.0
