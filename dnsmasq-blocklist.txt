@@ -2224,6 +2224,7 @@ address=/hsadspixel.net/0.0.0.0
 address=/hst-19-33.splius.lt/0.0.0.0
 address=/htlbid.com/0.0.0.0
 address=/httpool.com/0.0.0.0
+address=/hubadnetwork.com/0.0.0.0
 address=/hud8mxdt.computerhelpmirror.top/0.0.0.0
 address=/hueads.com/0.0.0.0
 address=/hueadsortb.com/0.0.0.0
