@@ -2014,6 +2014,7 @@ address=/fourarithmetic.com/0.0.0.0
 address=/fourthgate.org/0.0.0.0
 address=/fpctraffic.com/0.0.0.0
 address=/fpctraffic2.com/0.0.0.0
+address=/fpjs.io/0.0.0.0
 address=/fqtag.com/0.0.0.0
 address=/frailoffer.com/0.0.0.0
 address=/free-banners.com/0.0.0.0
