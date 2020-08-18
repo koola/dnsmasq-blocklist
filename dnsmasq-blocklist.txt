@@ -3054,6 +3054,7 @@ address=/personagraph.com/0.0.0.0
 address=/personal.editura-amsibiu.ro/0.0.0.0
 address=/petiteumbrella.com/0.0.0.0
 address=/pgalvaoteles.pt/0.0.0.0
+address=/pgl.example.com/0.0.0.0
 address=/pgl.example0101/0.0.0.0
 address=/pgmediaserve.com/0.0.0.0
 address=/pgpartner.com/0.0.0.0
