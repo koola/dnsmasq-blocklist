@@ -1454,6 +1454,7 @@ address=/casinopays.com/0.0.0.0
 address=/casinorewards.com/0.0.0.0
 address=/casinotraffic.com/0.0.0.0
 address=/catjogger.win/0.0.0.0
+address=/causecherry.com/0.0.0.0
 address=/cbanners.virtuagirlhd.com/0.0.0.0
 address=/cdn.bannerflow.com/0.0.0.0
 address=/cdn.branch.io/0.0.0.0
