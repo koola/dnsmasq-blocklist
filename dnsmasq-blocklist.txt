@@ -184,6 +184,7 @@ address=/ad.seznam.cz/0.0.0.0
 address=/ad.simflight.com/0.0.0.0
 address=/ad.simgames.net/0.0.0.0
 address=/ad.smartclip.net/0.0.0.0
+address=/ad.style/0.0.0.0
 address=/ad.tapthislink.com/0.0.0.0
 address=/ad.tbn.ru/0.0.0.0
 address=/ad.technoratimedia.com/0.0.0.0
