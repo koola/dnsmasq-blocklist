@@ -3113,6 +3113,7 @@ address=/playmobileads.com/0.0.0.0
 address=/pleasantpump.com/0.0.0.0
 address=/plengeh.wen.ru/0.0.0.0
 address=/plista.com/0.0.0.0
+address=/plotrabbit.com/0.0.0.0
 address=/plugrush.com/0.0.0.0
 address=/pocketmath.com/0.0.0.0
 address=/podzemi.myotis.info/0.0.0.0
