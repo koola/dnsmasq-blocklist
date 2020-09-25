@@ -2740,6 +2740,7 @@ address=/mobatory.com/0.0.0.0
 address=/mobclix.com/0.0.0.0
 address=/mobfox.com/0.0.0.0
 address=/mobile.bitterstrawberry.org/0.0.0.0
+address=/mobileanalytics.us-east-1.amazonaws.com/0.0.0.0
 address=/mobilefuse.com/0.0.0.0
 address=/mobileiconnect.com/0.0.0.0
 address=/mobperads.net/0.0.0.0
