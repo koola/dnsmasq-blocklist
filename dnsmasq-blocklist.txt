@@ -1510,6 +1510,7 @@ address=/classicspeedway.com/0.0.0.0
 address=/clearcomb.com/0.0.0.0
 address=/clevernt.com/0.0.0.0
 address=/click.a-ads.com/0.0.0.0
+address=/click.email.sonos.com/0.0.0.0
 address=/click.fool.com/0.0.0.0
 address=/click.kmindex.ru/0.0.0.0
 address=/click.negociosdigitaisnapratica.com.br/0.0.0.0
