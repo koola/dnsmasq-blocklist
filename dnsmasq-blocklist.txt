@@ -3399,7 +3399,6 @@ address=/rs6.net/0.0.0.0
 address=/rsiuk.co.uk/0.0.0.0
 address=/rta.dailymail.co.uk/0.0.0.0
 address=/rtb.gumgum.com/0.0.0.0
-address=/rtb.openx.net/0.0.0.0
 address=/rtbadzesto.com/0.0.0.0
 address=/rtbflairads.com/0.0.0.0
 address=/rtbidhost.com/0.0.0.0
