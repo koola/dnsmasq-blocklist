@@ -2127,6 +2127,7 @@ address=/google-analytics.com/0.0.0.0
 address=/googleadservices.com/0.0.0.0
 address=/googleanalytics.com/0.0.0.0
 address=/googlesyndication.com/0.0.0.0
+address=/googletagmanager.com/0.0.0.0
 address=/googletagservices.com/0.0.0.0
 address=/gorgeousground.com/0.0.0.0
 address=/gosciniec-paproc.pl/0.0.0.0
