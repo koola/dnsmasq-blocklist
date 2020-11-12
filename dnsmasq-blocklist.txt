@@ -1,7 +1,9 @@
+address=/0.8em;/0.0.0.0
 address=/1-1ads.com/0.0.0.0
 address=/101com.com/0.0.0.0
 address=/101order.com/0.0.0.0
 address=/123freeavatars.com/0.0.0.0
+address=/12px;/0.0.0.0
 address=/180hits.de/0.0.0.0
 address=/180searchassistant.com/0.0.0.0
 address=/1rx.io/0.0.0.0
@@ -25,12 +27,14 @@ address=/50websads.com/0.0.0.0
 address=/518ad.com/0.0.0.0
 address=/51yes.com/0.0.0.0
 address=/5mcwl.pw/0.0.0.0
+address=/60%;/0.0.0.0
 address=/6ldu6qa.com/0.0.0.0
 address=/6sc.co/0.0.0.0
 address=/777partner.com/0.0.0.0
 address=/77tracking.com/0.0.0.0
 address=/7bpeople.com/0.0.0.0
 address=/7search.com/0.0.0.0
+address=/80%;/0.0.0.0
 address=/82o9v830.com/0.0.0.0
 address=/a-ads.com/0.0.0.0
 address=/a.aproductmsg.com/0.0.0.0
@@ -1369,6 +1373,7 @@ address=/cdn.segment.com/0.0.0.0
 address=/cecash.com/0.0.0.0
 address=/cedato.com/0.0.0.0
 address=/celtra.com/0.0.0.0
+address=/center;/0.0.0.0
 address=/centerpointmedia.com/0.0.0.0
 address=/ceskydomov.alias.ngs.modry.cz/0.0.0.0
 address=/cetrk.com/0.0.0.0
@@ -1990,6 +1995,9 @@ address=/iconadserver.com/0.0.0.0
 address=/iconpeak2trk.com/0.0.0.0
 address=/icptrack.com/0.0.0.0
 address=/id5-sync.com/0.0.0.0
+address=/id="content">/0.0.0.0
+address=/id="footer">/0.0.0.0
+address=/id="page">/0.0.0.0
 address=/idealadvertising.net/0.0.0.0
 address=/identads.com/0.0.0.0
 address=/idevaffiliate.com/0.0.0.0
@@ -3333,6 +3341,7 @@ address=/tvmtracker.com/0.0.0.0
 address=/twittad.com/0.0.0.0
 address=/twyn.com/0.0.0.0
 address=/tynt.com/0.0.0.0
+address=/type="text/css"><!--/0.0.0.0
 address=/typicalteeth.com/0.0.0.0
 address=/tyroo.com/0.0.0.0
 address=/uarating.com/0.0.0.0
@@ -3557,3 +3566,5 @@ address=/zqtk.net/0.0.0.0
 address=/zukxd6fkxqn.com/0.0.0.0
 address=/zy16eoat1w.com/0.0.0.0
 address=/zzhc.vnet.cn/0.0.0.0
+address=/{/0.0.0.0
+address=/{}/0.0.0.0
