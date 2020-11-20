@@ -2907,6 +2907,7 @@ address=/sendmepixel.com/0.0.0.0
 address=/sensismediasmart.com.au/0.0.0.0
 address=/separatesilver.com/0.0.0.0
 address=/serv0.com/0.0.0.0
+address=/servads.net/0.0.0.0
 address=/servadsdisrupt.com/0.0.0.0
 address=/servedby-buysellads.com/0.0.0.0
 address=/servedbyadbutler.com/0.0.0.0
