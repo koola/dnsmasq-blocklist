@@ -3435,6 +3435,7 @@ address=/waryfog.com/0.0.0.0
 address=/wateryvan.com/0.0.0.0
 address=/wd-track.de/0.0.0.0
 address=/wdads.sx.atl.publicus.com/0.0.0.0
+address=/wearbasin.com/0.0.0.0
 address=/web-redirecting.com/0.0.0.0
 address=/web-stat.com/0.0.0.0
 address=/web.informer.com/0.0.0.0
