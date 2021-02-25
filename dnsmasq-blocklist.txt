@@ -2701,6 +2701,7 @@ address=/qnsr.com/0.0.0.0
 address=/quacksquirrel.com/0.0.0.0
 address=/quaintcan.com/0.0.0.0
 address=/quantcast.com/0.0.0.0
+address=/quantcount.com/0.0.0.0
 address=/quantserve.com/0.0.0.0
 address=/quantummetric.com/0.0.0.0
 address=/quarterbean.com/0.0.0.0
