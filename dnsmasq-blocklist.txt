@@ -2153,6 +2153,7 @@ address=/leedsads.com/0.0.0.0
 address=/lemmatechnologies.com/0.0.0.0
 address=/lettucelimit.com/0.0.0.0
 address=/levelrate.de/0.0.0.0
+address=/lever-analytics.com/0.0.0.0
 address=/lfeeder.com/0.0.0.0
 address=/lfstmedia.com/0.0.0.0
 address=/li.alibris.com/0.0.0.0
