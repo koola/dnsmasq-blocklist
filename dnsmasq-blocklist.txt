@@ -2060,6 +2060,7 @@ address=/instrumentsponge.com/0.0.0.0
 address=/intelliads.com/0.0.0.0
 address=/intelligenceadx.com/0.0.0.0
 address=/intellitxt.com/0.0.0.0
+address=/intentsify.io/0.0.0.0
 address=/interactive.forthnet.gr/0.0.0.0
 address=/intergi.com/0.0.0.0
 address=/internetfuel.com/0.0.0.0
