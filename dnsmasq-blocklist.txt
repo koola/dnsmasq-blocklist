@@ -2073,7 +2073,6 @@ address=/ip.ro/0.0.0.0
 address=/ip193.cn/0.0.0.0
 address=/iperceptions.com/0.0.0.0
 address=/ipredictive.com/0.0.0.0
-address=/ipro.com/0.0.0.0
 address=/ipstack.com/0.0.0.0
 address=/irchan.com/0.0.0.0
 address=/ireklama.cz/0.0.0.0
