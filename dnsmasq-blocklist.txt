@@ -3426,6 +3426,7 @@ address=/uttermosthobbies.com/0.0.0.0
 address=/uu.domainforlite.com/0.0.0.0
 address=/v1.cnzz.com/0.0.0.0
 address=/v1adserver.com/0.0.0.0
+address=/valerie.forbes.com/0.0.0.0
 address=/validclick.com/0.0.0.0
 address=/valuead.com/0.0.0.0
 address=/valueclick.com/0.0.0.0
