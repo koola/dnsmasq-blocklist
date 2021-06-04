@@ -1128,6 +1128,7 @@ address=/awin1.com/0.0.0.0
 address=/awzbijw.com/0.0.0.0
 address=/axiomaticalley.com/0.0.0.0
 address=/axonix.com/0.0.0.0
+address=/ay.delivery/0.0.0.0
 address=/aztracking.net/0.0.0.0
 address=/ba.afl.rakuten.co.jp/0.0.0.0
 address=/babs.tv2.dk/0.0.0.0
