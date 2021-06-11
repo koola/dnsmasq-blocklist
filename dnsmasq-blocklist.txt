@@ -2628,6 +2628,7 @@ address=/pixel.sojern.com/0.0.0.0
 address=/pixel.watch/0.0.0.0
 address=/pixel.yabidos.com/0.0.0.0
 address=/placed.com/0.0.0.0
+address=/plausibleio.workers.dev/0.0.0.0
 address=/play4traffic.com/0.0.0.0
 address=/playhaven.com/0.0.0.0
 address=/pleasantpump.com/0.0.0.0
