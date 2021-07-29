@@ -3233,6 +3233,7 @@ address=/tia.timeinc.net/0.0.0.0
 address=/ticketaunt.com/0.0.0.0
 address=/ticklesign.com/0.0.0.0
 address=/ticksel.com/0.0.0.0
+address=/tics.techdirt.com/0.0.0.0
 address=/tidaltv.com/0.0.0.0
 address=/tidint.pro/0.0.0.0
 address=/tinybar.com/0.0.0.0
