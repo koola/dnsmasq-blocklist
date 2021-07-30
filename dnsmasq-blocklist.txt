@@ -1458,6 +1458,7 @@ address=/clksite.com/0.0.0.0
 address=/clktrx.com/0.0.0.0
 address=/cloisteredhydrant.com/0.0.0.0
 address=/cloudcoins.biz/0.0.0.0
+address=/cloudflareinsights.com/0.0.0.0
 address=/clrstm.com/0.0.0.0
 address=/cluster.adultworld.com/0.0.0.0
 address=/clustrmaps.com/0.0.0.0
