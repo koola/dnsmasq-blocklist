@@ -352,6 +352,7 @@ address=/adpia.vn/0.0.0.0
 address=/adplus.co.id/0.0.0.0
 address=/adplxmd.com/0.0.0.0
 address=/adprofits.ru/0.0.0.0
+address=/adpushup.com/0.0.0.0
 address=/adrazzi.com/0.0.0.0
 address=/adreactor.com/0.0.0.0
 address=/adreclaim.com/0.0.0.0
