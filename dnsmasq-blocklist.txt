@@ -1307,6 +1307,7 @@ address=/british-banners.com/0.0.0.0
 address=/broadboundary.com/0.0.0.0
 address=/broadcastbed.com/0.0.0.0
 address=/broaddoor.com/0.0.0.0
+address=/broadstreetads.com/0.0.0.0
 address=/browser-http-intake.logs.datadoghq.com/0.0.0.0
 address=/browser-http-intake.logs.datadoghq.eu/0.0.0.0
 address=/bs.yandex.ru/0.0.0.0
