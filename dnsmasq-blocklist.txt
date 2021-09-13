@@ -1653,6 +1653,7 @@ address=/doubleverify.com/0.0.0.0
 address=/doubtfulrainstorm.com/0.0.0.0
 address=/downloadr.xyz/0.0.0.0
 address=/dpbolvw.net/0.0.0.0
+address=/dpgawov.com/0.0.0.0
 address=/dpu.samsungelectronics.com/0.0.0.0
 address=/dq95d35.com/0.0.0.0
 address=/drabsize.com/0.0.0.0
