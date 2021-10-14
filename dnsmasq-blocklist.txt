@@ -2929,6 +2929,7 @@ address=/sc-analytics.appspot.com/0.0.0.0
 address=/scambiobanner.aruba.it/0.0.0.0
 address=/scanscout.com/0.0.0.0
 address=/scarcesign.com/0.0.0.0
+address=/scarfsmash.com/0.0.0.0
 address=/scatteredheat.com/0.0.0.0
 address=/scintillatingscissors.com/0.0.0.0
 address=/scintillatingsilver.com/0.0.0.0
