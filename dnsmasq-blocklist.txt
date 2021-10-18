@@ -2197,6 +2197,7 @@ address=/ligatus.de/0.0.0.0
 address=/lightcast.leadscoringcenter.com/0.0.0.0
 address=/lightcushion.com/0.0.0.0
 address=/lightspeedcash.com/0.0.0.0
+address=/lightstep.medium.systems/0.0.0.0
 address=/lijit.com/0.0.0.0
 address=/link-booster.de/0.0.0.0
 address=/link4ads.com/0.0.0.0
