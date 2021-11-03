@@ -1295,6 +1295,7 @@ address=/bpu.samsungelectronics.com/0.0.0.0
 address=/braincash.com/0.0.0.0
 address=/brand-display.com/0.0.0.0
 address=/brandreachsys.com/0.0.0.0
+address=/breadbalance.com/0.0.0.0
 address=/breakableinsurance.com/0.0.0.0
 address=/breaktime.com.tw/0.0.0.0
 address=/brealtime.com/0.0.0.0
