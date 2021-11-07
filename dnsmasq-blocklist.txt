@@ -1589,6 +1589,7 @@ address=/dealdotcom.com/0.0.0.0
 address=/debonairway.com/0.0.0.0
 address=/debtbusterloans.com/0.0.0.0
 address=/decenterads.com/0.0.0.0
+address=/decisivebase.com/0.0.0.0
 address=/decisivedrawer.com/0.0.0.0
 address=/decisiveducks.com/0.0.0.0
 address=/decknetwork.net/0.0.0.0
