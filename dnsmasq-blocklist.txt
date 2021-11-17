@@ -1824,6 +1824,7 @@ address=/flashtalking.com/0.0.0.0
 address=/fleshlightcash.com/0.0.0.0
 address=/flexbanner.com/0.0.0.0
 address=/flimsycircle.com/0.0.0.0
+address=/flimsythought.com/0.0.0.0
 address=/floodprincipal.com/0.0.0.0
 address=/flowgo.com/0.0.0.0
 address=/flurry.com/0.0.0.0
