@@ -2680,6 +2680,7 @@ address=/pleasantpump.com/0.0.0.0
 address=/plista.com/0.0.0.0
 address=/plotrabbit.com/0.0.0.0
 address=/ployea.com/0.0.0.0
+address=/pltraffic8.com/0.0.0.0
 address=/pluckypocket.com/0.0.0.0
 address=/plugrush.com/0.0.0.0
 address=/pocketmath.com/0.0.0.0
