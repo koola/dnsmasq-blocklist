@@ -1397,6 +1397,7 @@ address=/click.cision.com/0.0.0.0
 address=/click.email.bbc.com/0.0.0.0
 address=/click.email.sonos.com/0.0.0.0
 address=/click.fool.com/0.0.0.0
+address=/click.hookupinyourcity.com/0.0.0.0
 address=/click.kmindex.ru/0.0.0.0
 address=/click.negociosdigitaisnapratica.com.br/0.0.0.0
 address=/click.redditmail.com/0.0.0.0
