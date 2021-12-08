@@ -3215,6 +3215,7 @@ address=/t.en25.com/0.0.0.0
 address=/t.firstpromoter.com/0.0.0.0
 address=/t.insigit.com/0.0.0.0
 address=/t.irtyd.com/0.0.0.0
+address=/t.news.browns-restaurants.co.uk/0.0.0.0
 address=/t.salesmatemail.com/0.0.0.0
 address=/taboola.com/0.0.0.0
 address=/tag.links-analytics.com/0.0.0.0
