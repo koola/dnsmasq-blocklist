@@ -1924,7 +1924,6 @@ address=/gostats.com/0.0.0.0
 address=/gothamads.com/0.0.0.0
 address=/gotraffic.net/0.0.0.0
 address=/gp.dejanews.com/0.0.0.0
-address=/gpm.samsungqbe.com/0.0.0.0
 address=/gracefulsock.com/0.0.0.0
 address=/graizoah.com/0.0.0.0
 address=/grandioseguide.com/0.0.0.0
