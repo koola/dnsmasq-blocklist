@@ -1808,6 +1808,7 @@ address=/fastclick.net/0.0.0.0
 address=/fastly-insights.com/0.0.0.0
 address=/faultycanvas.com/0.0.0.0
 address=/faultyfowl.com/0.0.0.0
+address=/fave.co/0.0.0.0
 address=/fc.webmasterpro.de/0.0.0.0
 address=/feathr.co/0.0.0.0
 address=/feebleshock.com/0.0.0.0
