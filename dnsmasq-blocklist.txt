@@ -3400,6 +3400,7 @@ address=/trafficswarm.com/0.0.0.0
 address=/trafficz.com/0.0.0.0
 address=/traffiq.com/0.0.0.0
 address=/trafic.ro/0.0.0.0
+address=/traildelsfars.com/0.0.0.0
 address=/traktrafficflow.com/0.0.0.0
 address=/tranquilside.com/0.0.0.0
 address=/travis.bosscasinos.com/0.0.0.0
